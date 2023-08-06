@@ -11,13 +11,11 @@ module.exports = {
       port: process.env.DB_PORT,
       database: process.env.DB_NAME,
       ssl: {
-        rejectUnauthorized: false,
-        // Opcional, si estás utilizando un certificado autofirmado
+        rejectUnauthorized: true, // Configuración opcional para certificados autofirmados
       },
     },
     migrations: {
       directory: path.join(__dirname, "database", "migrations"),
-      // Ruta personalizada para los archivos de migración
     },
   },
   // ...
