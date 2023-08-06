@@ -10,6 +10,10 @@ module.exports = {
       host: process.env.DB_HOST,
       port: process.env.DB_PORT,
       database: process.env.DB_NAME,
+      ssl: {
+        rejectUnauthorized: false,
+        // Opcional, si estás utilizando un certificado autofirmado
+      },
     },
     migrations: {
       directory: path.join(__dirname, "database", "migrations"),
