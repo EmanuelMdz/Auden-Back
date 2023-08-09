@@ -7,7 +7,7 @@ module.exports = {
     connection: {
       user: process.env.PGUSER,
       password: process.env.PGPASSWORD,
-      host: process.env.PGHOST,
+      host: process.env.ENDPOINT_ID,
       port: process.env.DB_PORT,
       database: process.env.PGDATABASE,
       ssl: {
