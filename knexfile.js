@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   development: {
-    client: process.env.DB_DRIVER || "pg",
+    client: "pg",
     connection: {
       user: process.env.PGUSER,
       password: process.env.PGPASSWORD,
