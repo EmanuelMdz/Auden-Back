@@ -22,7 +22,7 @@ const pool = new Pool({
 require("dotenv").config();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://auden-front.vercel.app" }));
 
 // Ruta para comprobar la conexión a la base de datos
 app.get("/", async (req, res) => {
