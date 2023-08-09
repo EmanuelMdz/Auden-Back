@@ -17,6 +17,7 @@ module.exports = {
     directory: path.join(__dirname, "database", "migrations"),
   },
 };
+
 // module.exports = {
 //   client: "pg",
 //   connection: {
