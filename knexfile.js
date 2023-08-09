@@ -5,11 +5,11 @@ module.exports = {
   development: {
     client: process.env.DB_DRIVER || "pg",
     connection: {
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      host: process.env.DB_HOST,
+      user: process.env.PGUSER,
+      password: process.env.PGPASSWORD,
+      host: process.env.PGHOST,
       port: process.env.DB_PORT,
-      database: process.env.DB_NAME,
+      database: process.env.PGDATABASE,
       ssl: {
         rejectUnauthorized: true, // Configuración opcional para certificados autofirmados
       },
