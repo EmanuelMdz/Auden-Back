@@ -21,7 +21,7 @@ const pool = new Pool({
 
 require("dotenv").config();
 const corsHTTPS = [
-  "http://localhost:5173/",
+  "http://localhost:5173",
   "https://auden-back-tau.vercel.app",
 ];
 
