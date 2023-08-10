@@ -26,7 +26,7 @@ const corsHTTPS = [
 ];
 
 app.use(express.json());
-app.use(cors({ origin: corsHTTPS }));
+app.use(cors({ origin: "*" }));
 
 // Ruta para comprobar la conexión a la base de datos
 app.get("/", async (req, res) => {
