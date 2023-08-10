@@ -20,9 +20,13 @@ const pool = new Pool({
 });
 
 require("dotenv").config();
+const corsHTTPS = [
+  "http://localhost:5173",
+  "https://auden-back-tau.vercel.app",
+];
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: corsHTTPS }));
 
 // Ruta para comprobar la conexión a la base de datos
 app.get("/", async (req, res) => {
